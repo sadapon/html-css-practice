@@ -66,3 +66,15 @@ table {
     font-size: 1.5rem;
     color: #fff;
 }
+
+.header__cat{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__cat input,
+.header__cat label{
+    display: none;
+}
