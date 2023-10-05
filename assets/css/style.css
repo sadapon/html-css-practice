@@ -43,7 +43,13 @@ table {
     box-sizing: border-box;
 }
 /* -----ここから下に記述してください----- */
+html {
+    font-size: 20px;
+}
 
+body {
+    font-family: europa,"Yu Gothic",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+}
 /* ヘッダー */
 
 .header{
