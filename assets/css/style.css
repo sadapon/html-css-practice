@@ -142,12 +142,12 @@ body {
 }
 
 /* concept */
-.mainConcept__inner{
+.mainContent__inner{
     max-width: 1080px;
     margin: auto;
     padding: 120px 0 0;
 }
-.mainConcept__cat{
+.mainContent__cat{
     margin-bottom: 120px;
 }
 .mainContent__title{
