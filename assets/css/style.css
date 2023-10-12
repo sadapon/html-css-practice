@@ -231,4 +231,34 @@ body {
     height: 580px;
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: cover;
+    overflow-x: hidden;
+    display: inline-block;
+}
+.application__area{
+    width: 40%;
+}
+.application__area__inner{
+    padding-left: 60px;
+    position: relative;
+}
+.application__area__inner::before{
+    width: calc(100% + 200px);
+    content: "";
+    position: absolute;
+    background-color: #f4f4f4;
+    height: calc(100% + 200px);
+    right: 0;
+    bottom: -100px;
+    z-index: -1;
+}
+.application__area .mainContent__subTitle{
+    text-align: left;
+}
+.application__sentece p{
+    line-height: 2;
+}
+.application__sentece p::first-letter{
+    font-weight: bold;
+    font-size: 1.2rem;
 }
