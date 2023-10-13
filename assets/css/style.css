@@ -396,3 +396,7 @@ body {
     font-size: .8rem;
     text-align: center;
 }
+/* メディアクエリ */
+@media screen and (max-width: 768px) {
+    
+}
