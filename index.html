@@ -247,9 +247,16 @@
                 });
             };
             // ハンバーガーメニューチェックボックス外す処理
-
+            let unlockCheckBox = function(){
+                let $trigger = $('.header__navi a');
+                let $target = $('input[type="checkbox"]');
+                $trigger.click(function(){
+                    $target.prop('checked', false);
+                });
+            };
             // Document Ready
             runScroll();
+            unlockCheckBox();
         })
     </script>
 </body>
