@@ -231,6 +231,27 @@
     <!-- scriptエリア -->
     <!-- jquery cdn読み込み -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $(function(){
+            //スムーズスクロール
+            let runScroll = function(){
+                $('a[href^="#"]').click(function(){
+                    let speed = 400;
+                    let href = $(this).attr("href");
+                    let $target = $(href == "#" || href == "" ? 'html' : href);
+                    let position = $target.offset().top - 100;
+                    $('body,html').animate({
+                        scrollTop: position
+                    }, speed, 'swing');
+                    return false;
+                });
+            };
+            // ハンバーガーメニューチェックボックス外す処理
+
+            // Document Ready
+            runScroll();
+        })
+    </script>
 </body>
 
 </html>
